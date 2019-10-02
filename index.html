@@ -47,7 +47,7 @@
             <div class="content">
                 <div class="inner">
                     <h1>Géna PAILHA</h1>
-                    <h2>Développeuse d'applications Web Agile</h2>
+                    <h2>Formatrice développement web et applications</h2>
 
                 </div>
 
@@ -55,7 +55,7 @@
                 <div class="content">
                     <div class="inner">
                         <ul>
-                            <li>47 ans</li>
+                            <li>49 ans</li>
                             <li>Mariée, 2 enfants</li>
                             <li>Permis de conduire</li>
 
@@ -280,7 +280,7 @@
                     <h4>De 2008 à 2010</h4>
                     <ul>
                         <li>Gestion des relances client</li>
-                        <li>Divers tâches administratives</li>
+                        <li>Diverses tâches administratives</li>
                     </ul>
 
                 </section>
@@ -315,7 +315,7 @@
                         <li>Installer du matériel informatique</li>
                         <li>Faire la configuration réseau</li>
                     </ul>
-                    sur différents sites comme les écoles, médiathèques, centre sociaux
+                    sur différents sites comme les écoles, médiathèques, centres sociaux
                     ...
 
 
@@ -377,7 +377,7 @@
     <section id="contact" class="wrapper style1 fade-up">
         <div class="inner">
             <h1>Pour me contacter : </h1>
-            <p> à votre convenance, avec le formulaire ci-dessous ou par téléphone </p>
+
             <p id="messageserveur"></p>
             <div class="split style1">
                 <section>
@@ -406,10 +406,10 @@
                             <h3>Email</h3>
                             <a href="#">gena@e64.net</a>
                         </li>-->
-                        <li>
+                       <!-- <li>
                             <h3>Téléphone</h3>
                             <span>06 61 48 70 55</span>
-                        </li>
+                        </li>-->
                         <li>
                             <h3>Réseaux sociaux</h3>
                             <ul class="icons">
@@ -451,7 +451,7 @@
     $(document).ready(function () {
         $('#formulaireContact').submit(function (e) {
             e.preventDefault();
-            $.post("http://localhost:8080/contact.php", {
+            $.post("contact.php", {
                 name: $('#name').val(),
                 email: $('#email').val(),
                 message: $('#message').val()
